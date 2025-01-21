@@ -24,9 +24,10 @@ DbCon()
 app.use(express.json({ limit: '10mb' }));
 app.use(express.json()) // Parse incoming JSON requests
 app.use(cors({
-    credentials: true,
-    origin: 'http://localhost:3000'
+    origin: '*',
+    credentials: true
 }));
+
 
 // Define routes
 app.use('/api/auth', AuthRoutes)
