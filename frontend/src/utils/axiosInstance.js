@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-    baseURL: process.env.NEXT_PUBLIC_BASE_PATH || 'http://localhost:4000',
+    baseURL: process.env.NEXT_PUBLIC_SERVER_HOST,
     headers: {
         'Content-Type': 'application/json',
     },
