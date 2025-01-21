@@ -10,13 +10,15 @@
 
 // export default nextConfig;
 
+// @ts-check
 
-/** @type {import('next').NextConfig} */
+/**
+ * @type {import('next').NextConfig}
+ */
 const nextConfig = {
   images: {
     domains: ['res.cloudinary.com'],
   },
-  output: 'export', // This should be part of the main configuration object
-};
+}
 
-export default nextConfig;
+export default nextConfig

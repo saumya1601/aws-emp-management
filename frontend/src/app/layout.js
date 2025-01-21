@@ -9,12 +9,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Provider store={store}>
+        {/* <Provider store={store}>
           <PersistGate loading={null} persistor={persistor}>
             <ToastContainer />
             {children}
           </PersistGate>
-        </Provider>
+        </Provider> */}
+        <div>Hellow</div>
       </body>
     </html>
   );
